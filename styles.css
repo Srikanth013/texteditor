@@ -1,0 +1,28 @@
+body{
+    background-color: bisque;
+}
+h1{
+    background-color: black;
+    color:aliceblue;
+    text-align: center;
+    font-style:italic;
+}
+#textInput{
+   margin-left: 400px;
+   background-color: gainsboro;
+
+}
+.btn{
+    margin-left: 400px;
+    margin-top: 0.25cm;
+    background-color: black;
+    color: white;
+    font-style: normal;
+    border-radius: 0.25rem;
+}
+#bs{
+    margin-left: 100px;
+    background-color: black;
+    color:white;
+    border-radius: 0.25rem;
+}

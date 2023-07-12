@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Text Editor</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <h1>Basic Text Editor</h1>
+
+  <textarea id="textInput" rows="5" cols="50"></textarea>
+  <br>
+  <button onclick="convertToUpperCase()" class="btn">Uppercase</button>
+  <br/>
+  <button onclick="convertToLowerCase()" class="btn">Lowercase</button>
+  <button onclick="clearText()" id="bs">Clear</button>
+  <br>
+  <p id="output"></p>
+
+  <script>
+    function clearText() {
+      document.getElementById('textInput').value = '';
+      document.getElementById('output').innerText = '';
+    }
+
+    function convertToUpperCase() {
+      const inputText = document.getElementById('textInput').value;
+      const upperCaseText = inputText.toUpperCase();
+      document.getElementById('output').innerText = upperCaseText;
+    }
+
+    function convertToLowerCase() {
+      const inputText = document.getElementById('textInput').value;
+      const lowerCaseText = inputText.toLowerCase();
+      document.getElementById('output').innerText = lowerCaseText;
+    }
+  </script>
+</body>
+</html>
